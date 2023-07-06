@@ -8,6 +8,3 @@ authors = ["ayrock-dev"]
 axum = { version = "0.6.18", features = ["tracing"] }
 leptos = { version = "0.4.1", features = ["ssr"] }
 tokio = { version = "1.0", features = ["full"] }
-
-[package.metadata.leptos]
-output-name = "htmx-axum-leptos"
