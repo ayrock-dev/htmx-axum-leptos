@@ -1,5 +1,5 @@
 use axum::{response::Html, routing::get, Router};
-use leptos::view;
+use leptos::{ssr, view};
 
 use std::net::SocketAddr;
 
@@ -26,10 +26,12 @@ async fn healthcheck() -> &'static str {
 }
 
 async fn home() -> Html<String> {
-  Html(leptos::ssr::render_to_string(|cx| {
+  Html(ssr::render_to_string(|cx| {
     view! { cx,
       <html>
         <head>
+          <title>{"htmx-axum-leptos"}</title>
+          <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22><text y=%2224%22 font-size=%2224%22>🦀</text></svg>"></link>
           <script src="https://cdn.tailwindcss.com"></script>
         </head>
         <body class="text-slate-500 min-h-screen">
@@ -83,7 +85,8 @@ async fn home() -> Html<String> {
               <div class="bg-slate-50 rounded-lg p-6"><p><span class="text-base text-slate-900 font-semibold">{"htmx"}</span><br />{"client markup + interactivity"}</p></div>
               <div class="bg-slate-50 rounded-lg p-6"><p><span class="text-base text-slate-900 font-semibold">{"axum"}</span><br />{"web server"}</p></div>
               <div class="bg-slate-50 rounded-lg p-6"><p><span class="text-base text-slate-900 font-semibold">{"leptos"}</span><br />{"ssr"}</p></div>
-              <div class="bg-slate-50 rounded-lg p-6"><p><span class="text-base text-slate-900 font-semibold">{"TailwindCSS"}</span><br />{"because tech twitter said so"}</p></div>
+              <div class="bg-slate-50 rounded-lg p-6"><p><span class="text-base text-slate-900 font-semibold">{"TailwindCSS"}</span><br />{"because tech twitter said so (jk it's actually good)"}</p></div>
+              <div class="bg-slate-50 rounded-lg p-6"><p><span class="text-base text-slate-900 font-semibold">{"Turso"}</span><br />{"edge data on sqlite"}</p></div>
             </div>
           </section>
           <footer class="pb-16 text-sm leading-6">
