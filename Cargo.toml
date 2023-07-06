@@ -1,0 +1,13 @@
+[package]
+name = "htmx-axum-leptos"
+version = "0.1.0"
+edition = "2021"
+authors = ["ayrock-dev"]
+
+[dependencies]
+axum = { version = "0.6.18", features = ["tracing"] }
+leptos = { version = "0.4.1", features = ["ssr"] }
+tokio = { version = "1.0", features = ["full"] }
+
+[package.metadata.leptos]
+output-name = "htmx-axum-leptos"
