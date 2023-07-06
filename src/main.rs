@@ -71,21 +71,18 @@ async fn home() -> Html<String> {
           <section tabindex="-1" class="relative max-w-7xl mx-auto px-4 focus:outline-none sm:px-3 md:px-5">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
               <p class="mt-4 text-3xl sm:text-4xl text-slate-900 font-extrabold tracking-tight">{"The stack built for 🦀 Rustaceans. "}</p>
+              <p class="mt-4 max-w-3xl space-y-6">{"This stack needs a name. "}<b><i>{"htmaxum?"}</i></b>{" We can rebrand to MAX in a year and launch an entirely new app."}</p>
             </div>
             <div class="mt-4 grid grid-cols-1 gap-6 lg:gap-8 sm:grid-cols-2 lg:grid-cols-3 max-h-[33rem] overflow-hidden text-sm leading-6">
-                  <div class="bg-slate-50 rounded-lg p-6"><p><span class="text-base text-slate-900 font-semibold">{"htmx"}</span><br />{"client markup + interactivity"}</p></div>
-
-                  <div class="bg-slate-50 rounded-lg p-6"><p><span class="text-base text-slate-900 font-semibold">{"axum"}</span><br />{"web server"}</p></div>
-
-                  <div class="bg-slate-50 rounded-lg p-6"><p><span class="text-base text-slate-900 font-semibold">{"leptos"}</span><br />{"ssr"}</p></div>
-
-                  <div class="bg-slate-50 rounded-lg p-6"><p><span class="text-base text-slate-900 font-semibold">{"TailwindCSS"}</span><br />{"because tech twitter said so"}</p></div>
-
+              <div class="bg-slate-50 rounded-lg p-6"><p><span class="text-base text-slate-900 font-semibold">{"htmx"}</span><br />{"client markup + interactivity"}</p></div>
+              <div class="bg-slate-50 rounded-lg p-6"><p><span class="text-base text-slate-900 font-semibold">{"axum"}</span><br />{"web server"}</p></div>
+              <div class="bg-slate-50 rounded-lg p-6"><p><span class="text-base text-slate-900 font-semibold">{"leptos"}</span><br />{"ssr"}</p></div>
+              <div class="bg-slate-50 rounded-lg p-6"><p><span class="text-base text-slate-900 font-semibold">{"TailwindCSS"}</span><br />{"because tech twitter said so"}</p></div>
             </div>
           </section>
           <footer class="pb-16 text-sm leading-6">
             <div class="max-w-7xl mx-auto divide-y divide-slate-200 px-4 sm:px-6 md:px-8">
-              <div class="mt-16 pt-10">
+              <div class="border-t border-slate-200 mt-16 pt-10">
                 <a href="/" class="text-lg font-semibold">{"htmx-axum-leptos"}</a>
               </div>
             </div>
